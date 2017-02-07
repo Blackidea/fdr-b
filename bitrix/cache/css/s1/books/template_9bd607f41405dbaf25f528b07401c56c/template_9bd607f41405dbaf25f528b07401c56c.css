@@ -1,0 +1,807 @@
+
+
+/* Start:/bitrix/templates/books/components/bitrix/menu/horizontal_multilevel/style.css?14864753714598*/
+/**Top menu**/
+#horizontal-multilevel-menu,#horizontal-multilevel-menu ul
+{
+	margin:0; padding:0;
+	background:#BC262C url(/bitrix/templates/books/components/bitrix/menu/horizontal_multilevel/images/header_menu_bg.gif) repeat-x;
+	min-height:27px;
+	width:100%;
+	list-style:none;
+	font-size:11px;
+	float:left;
+	/*font-size:90%*/
+}
+
+#horizontal-multilevel-menu
+{
+	
+}
+
+/*Links*/
+#horizontal-multilevel-menu a
+{
+	display:block;
+	padding:5px 10px;
+	/*padding:0.3em 0.8em;*/
+	text-decoration:none;
+	text-align:center;
+}
+
+#horizontal-multilevel-menu li 
+{
+	float:left;
+}
+
+/*Root items*/
+#horizontal-multilevel-menu li a.root-item
+{
+	color:#fff;
+	font-weight:bold;
+	padding:7px 12px;
+}
+
+/*Root menu selected*/
+#horizontal-multilevel-menu li a.root-item-selected
+{
+	background:#fc8d3d;
+	color:#fff;
+	font-weight:bold;
+	padding:7px 12px;
+}
+
+/*Root items: hover*/
+#horizontal-multilevel-menu li:hover a.root-item, #horizontal-multilevel-menu li.jshover a.root-item
+{
+	background:#e26336;
+	color:#fff;
+}
+
+/*Item-parents*/
+#horizontal-multilevel-menu a.parent
+{
+	background: url(/bitrix/templates/books/components/bitrix/menu/horizontal_multilevel/images/arrow.gif) center right no-repeat;
+}
+
+/*Denied items*/
+#horizontal-multilevel-menu a.denied
+{
+	background: url(/bitrix/templates/books/components/bitrix/menu/horizontal_multilevel/images/lock.gif) center right no-repeat;
+}
+
+/*Child-items: hover*/
+#horizontal-multilevel-menu li:hover, #horizontal-multilevel-menu li.jshover
+{
+	background:#D6D6D6;
+	color:#fff;
+}
+
+/*Child-items selected*/
+#horizontal-multilevel-menu li.item-selected
+{
+	background:#D6D6D6;
+	color:#fff;
+}
+
+/*Sub-menu box*/
+#horizontal-multilevel-menu li ul
+{
+	position:absolute;
+	/*top:-999em;*/
+	top:auto;
+	display:none;
+	z-index:500;
+
+	height:auto;
+	/*width:12em;*/
+	width:135px;
+	background:#F5F5F5;
+	border:1px solid #C1C1C1;
+}
+
+/*Sub-menu item box*/
+#horizontal-multilevel-menu li li 
+{
+	width:100%;
+	border-bottom:1px solid #DEDEDE;
+}
+
+/*Item link*/
+#horizontal-multilevel-menu li ul a
+{
+	text-align:left;
+}
+
+/*Items text color & size */
+#horizontal-multilevel-menu li a,
+#horizontal-multilevel-menu li:hover li a,
+#horizontal-multilevel-menu li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li a
+{
+	color:#4F4F4F;
+	font-weight:bold;
+}
+
+/*Items text color & size: hover*/
+#horizontal-multilevel-menu li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover a,
+#horizontal-multilevel-menu li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover a
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover a
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li.jshover a
+{
+	color:#4F4F4F;
+}
+
+#horizontal-multilevel-menu li ul ul
+{
+	margin:-27px 0 0 132px;
+	/*margin:-1.93em 0 0 11.6em;*/
+}
+
+#horizontal-multilevel-menu li:hover ul ul,
+#horizontal-multilevel-menu li.jshover ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul ul ul
+{
+	/*top:-999em;*/
+	display:none;
+}
+
+#horizontal-multilevel-menu li:hover ul,
+#horizontal-multilevel-menu li.jshover ul,
+#horizontal-multilevel-menu li li:hover ul,
+#horizontal-multilevel-menu li li.jshover ul,
+#horizontal-multilevel-menu li li li:hover ul,
+#horizontal-multilevel-menu li li li.jshover ul,
+#horizontal-multilevel-menu li li li li:hover ul,
+#horizontal-multilevel-menu li li li li.jshover ul,
+#horizontal-multilevel-menu li li li li li:hover ul,
+#horizontal-multilevel-menu li li li li li.jshover ul
+{
+	/*z-index:1000;
+	top:auto;*/
+	display:block;
+}
+
+div.menu-clear-left
+{
+	clear:left;
+}
+/* End */
+
+
+/* Start:/bitrix/components/bitrix/menu/templates/.default/style.min.css?1486474706490*/
+ul.left-menu{list-style:none;margin:0;padding:0;margin-bottom:8px;position:relative}ul.left-menu li{padding:10px 16px;background:#f5f5f5 url(/bitrix/components/bitrix/menu/templates/.default/images/left_menu_bg.gif) top repeat-x}ul.left-menu li a{font-size:100%;color:#bc262c;font-weight:bold;text-decoration:none}ul.left-menu li a:visited{color:#bc262c}ul.left-menu li a:hover{color:#bc262c}ul.left-menu li a.selected:link,ul.left-menu li a.selected:visited,ul.left-menu li a.selected:active,ul.left-menu li a.selected:hover{color:#fc8d3d}
+/* End */
+
+
+/* Start:/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/style.css?14864750338373*/
+/* Personal Messages */
+.pm-messages-notification { 
+	display: inline-block; 
+	position:absolute; 
+	z-index:500; 
+	height:26px; 
+	cursor:pointer;
+}
+.pm-messages-alert { 
+	left:600px;
+}
+
+.pm-messages-notification span, .pm-messages-notification a {display:inline-block; height: 26px; vertical-align:top;}
+.pm-messages-notification-left, .pm-messages-notification-right {  width: 3px;  }
+.pm-messages-notification-text { white-space: nowrap; color: #fff; padding:0 20px 0 7px; font: bold 12px/22px Verdana, Tahoma, sans-serif;}
+.pm-messages-notification-text-text { padding-left:5px;}
+.pm-messages-notification-close, .pm-messages-notification-close span { width:20px; cursor:pointer; }
+
+.pm-messages-notification .pm-messages-notification-left { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) no-repeat 0 0; }
+.pm-messages-notification .pm-messages-notification-text { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) repeat-x 0 -26px; }
+.pm-messages-notification .pm-messages-notification-right { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) no-repeat -3px 0; }
+.pm-messages-notification .pm-messages-notification-close { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) repeat-x 0 -26px; }
+.pm-messages-notification .pm-messages-notification-close span { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) no-repeat -159px 0; }
+.pm-messages-notification .pm-messages-notification-close:hover span { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) no-repeat -134px 0;} 
+
+
+.pm-messages-alert .pm-messages-notification-left { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) no-repeat -19px 0; }
+.pm-messages-alert .pm-messages-notification-text { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) repeat-x 0 -52px; padding:0 10px 0 7px; }
+.pm-messages-alert .pm-messages-notification-right { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) no-repeat -22px 0; }
+.pm-messages-alert .pm-messages-notification-close { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) repeat-x 0 -52px; }
+.pm-messages-alert .pm-messages-notification-close span { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) no-repeat -159px 0; }
+.pm-messages-alert .pm-messages-notification-close:hover span { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) no-repeat -134px 0;}
+
+
+.pm-messages-box {
+	background:url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) no-repeat right -108px;
+	position:absolute;
+	top:60px;
+	left:300px;
+	z-index:500;
+	width: 540px;
+	height:245px;
+
+	letter-spacing:normal !important;
+	list-style:none !important;
+	text-align: left !important;
+	text-indent:0 !important;
+	text-transform: none !important;
+	visibility:visible !important;
+	white-space: normal !important;
+	word-spacing:normal !important;
+	vertical-align:baseline !important;
+	font:normal normal normal 13px/normal Verdana, Tahoma, sans-serif !important;
+	color: #000 !important;
+}
+
+.pm-messages-box a { color: #000 !important; }
+
+
+.pm-messages-box-inner
+{
+	background:#fff;
+	margin: 0 8px 0 0;
+	border-top: 2px solid #d1d1d1;
+	border-left: 2px solid #d1d1d1;
+}
+
+.pm-messages-box-content { height:243px; }
+
+.pm-messages-box-bottom { height:9px; overflow:hidden; font-size:1px !important; position:absolute; width:100%;}
+.pm-messages-box-bottom-left, .pm-messages-box-bottom-right { width: 8px; height: 9px; position:absolute;}
+.pm-messages-box-bottom-left { top: 0; left:0; background:url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) no-repeat 0 -80px;}
+.pm-messages-box-bottom-right { top: 0; left:-8px; margin-left:100%; background:url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) no-repeat -10px -80px;}
+.pm-messages-box-bottom-center { margin: 0 8px; height:9px; background:url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) repeat-x 0 -91px;}
+
+.pm-messages-box-title { height: 26px; background: #e0efda;  padding: 0 0 0 14px; position:relative;}
+.pm-messages-box-alert .pm-messages-box-title { background: #fbf3c2; } 
+.pm-messages-box-title span { color: #000 !important; font: normal normal normal 15px/25px Arial, Helvetica, sans-serif !important; height:26px; display:block; margin:0 27px 0 0; cursor:move;}
+.pm-messages-box-title a { width: 26px; height: 26px; position:absolute; top:0; right:0; background:url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) -98px 2px no-repeat; outline:none; cursor:pointer;}
+
+.pm-messages-box-profile { margin: 7px 14px 1px 14px; overflow:hidden; position:relative; border-bottom: 1px solid #e2e2e2; padding:0 0 7px 0; zoom:1;}
+.pm-messages-box-profile-inner { height:44px;}
+.pm-messages-box-profile-avatar {  float: left; margin:0; }
+.pm-messages-box-profile-avatar a {display: inline-block; width: 42px; height:42px; background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/sprite.png) no-repeat -33px -485px; border:1px solid #afafaf; position:relative;}
+.pm-messages-box-profile-info { margin-left: 55px; padding: 3px 0 0 0; }
+.pm-messages-box-profile-info a { font: normal normal normal 12px/normal Verdana, Tahoma, sans-serif !important; text-decoration:underline; color: #0069c4 !important; outline:none; padding: 3px 0 0 0; white-space: nowrap !important;}
+.pm-messages-box-profile-info span {display:block; color: #000; font-size:11px !important; margin-top:5px; background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/icon-user-online-small.gif) no-repeat 0 2px; padding: 0 0 0 15px;}
+.pm-messages-box-profile-info span i { font-style: normal !important; color: #909090;}
+.pm-messages-box-date { display: block; padding: 0 0 0 10px; height:20px; position:absolute; top: 2px; right:0; font: normal normal normal 11px/normal Verdana, Tahoma, sans-serif !important; color: #999 !important; background:#fff; }
+
+
+.pm-messages-box-text { margin: 0 14px 0 14px; padding:0 0 0 14px;  }
+.pm-messages-box-text-inner { height: 115px; overflow:auto; /**/}
+.pm-messages-box-text-content { margin :10px 0 5px 0;}
+.pm-messages-box-text-content a { color: #0069c4 !important; }
+.pm-messages-box-text-content-author { padding: 0 0 5px 0;}
+
+.pm-messages-box-actions {  overflow:hidden; margin: 1px 14px 0 17px; border-top: 1px solid #e2e2e2; padding: 7px 0 0 0;}
+.pm-messages-box-actions-inner { height:30px; position:relative;}
+.pm-messages-box-buttons { position: absolute; top: 0; right:6px;  height: 25px; }
+.pm-messages-box-buttons input.read-checkbox { height: 25px; }
+.pm-messages-box-paging { vertical-align:middle; margin: 0; position:absolute; top:3px; left:0; }
+.pm-messages-box-paging span, .pm-messages-box-paging i, .pm-messages-box-paging b, .pm-messages-box-paging a { vertical-align:middle; height:17px; display:inline-block; font:normal normal normal 12px/normal Verdana, Tahoma, sans-serif !important;}
+.pm-messages-box-paging a { text-decoration: none; color: #0069c4 !important; outline:none; width: 20px; height:20px;}
+.pm-messages-box-larr { background:transparent url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) -6px -106px no-repeat; }
+.pm-messages-box-rarr { background:transparent url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.png) -27px -106px no-repeat; }
+.pm-messages-box-larr:hover, .pm-messages-box-rarr:hover { background-color: #eee;}
+.pm-messages-box-paging i { margin:0 3px 0 6px;}
+.pm-messages-box-paging b { margin:0 6px 0 3px;}
+.pm-messages-box-paging i { color:#0069c4 !important; font-weight:bold !important;}
+.pm-messages-box-paging span, .pm-messages-box-paging b { color: #a1a1a1 !important;}
+
+.pm-messages-box-buttons label { font: normal normal normal 11px/normal Verdana, Tahoma, sans-serif !important; color:#999 !important; vertical-align:middle; margin: 0 3px 0 3px;}
+.pm-messages-box-buttons input { vertical-align:middle; font: normal normal normal 13px/normal Arial, Helvetica, sans-serif !important; margin: 0 0 0 10px;}
+
+* html .pm-messages-box { background:none; }
+* html .pm-messages-box-inner { border: 2px solid #d1d1d1;}
+* html .pm-messages-box-bottom-left {  background:none; }
+* html .pm-messages-box-bottom-center {  background:none;  }
+* html .pm-messages-box-bottom-right {  background:none;  }
+* html .pm-messages-box-larr { background:transparent url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.gif) -1px -27px no-repeat; }
+* html .pm-messages-box-rarr { background:transparent url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.gif) -22px -27px no-repeat;  }
+* html .pm-messages-box-title a { background:url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.gif) -2px 0 no-repeat; }
+* html .pm-messages-notification .pm-messages-notification-close span { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.gif) no-repeat -62px 0; }
+* html .pm-messages-notification .pm-messages-notification-close:hover span { background: url(/bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/images/pm-messages-sprite.gif) no-repeat -37px 0;}
+/* End */
+
+
+/* Start:/bitrix/components/bitrix/system.auth.form/templates/.default/style.min.css?1486474711424*/
+div.bx-system-auth-form span.bx-auth-secure{background-color:#fffae3;border:1px solid #dedbc8;padding:2px;display:inline-block;vertical-align:bottom;margin-top:-1px}div.bx-system-auth-form div.bx-auth-secure-icon{background-image:url(/bitrix/components/bitrix/system.auth.form/templates/.default/images/sec.png);background-repeat:no-repeat;background-position:center;width:19px;height:18px}div.bx-system-auth-form div.bx-auth-secure-unlock{background-image:url(/bitrix/components/bitrix/system.auth.form/templates/.default/images/sec-unlocked.png)}
+/* End */
+
+
+/* Start:/bitrix/components/bitrix/breadcrumb/templates/.default/style.min.css?1486474704448*/
+.bx-breadcrumb{margin:10px 0}.bx-breadcrumb i{color:#b5bdc2;line-height:13px;font-size:12px;vertical-align:middle;margin-right:5px}.bx-breadcrumb .bx-breadcrumb-item{float:left;margin-bottom:10px;white-space:nowrap;line-height:13px;vertical-align:middle;margin-right:10px}.bx-breadcrumb .bx-breadcrumb-item span{font-family:"Open Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:13px}.bx-breadcrumb .bx-breadcrumb-item a{border-bottom:0}
+/* End */
+
+
+/* Start:/bitrix/components/bitrix/socialnetwork.group_top/templates/.default/style.css?1486475036797*/
+table.sonet-user-profile-friends, table.sonet-user-profile-groups
+{
+	border:1px solid #C4C4C3;
+	border-collapse:collapse;
+}
+
+table.sonet-user-profile-friends td, table.sonet-user-profile-groups td
+{
+	border:1px solid #c4c4c4;
+	padding:6px 5px;
+}
+
+table.sonet-user-profile-friends thead td, table.sonet-user-profile-friends th, table.sonet-user-profile-groups thead td, table.sonet-user-profile-groups th
+{
+	background-color:#f2f2ea;
+	/*text-align:left;*/
+	font-weight:bold;
+	font-size:12px;
+	background-image:none;
+	border:1px solid #C4C4C3;
+	border-bottom:none;
+	padding:8px;
+}
+
+
+table.sonet-user-profile-friend-box tbody td, table.sonet-user-profile-friend-box td
+{
+	border:none;
+	padding:6px 5px;
+	background:transparent;
+}
+
+.sonet-date-time
+{
+	font-size:95%;
+	display:block;
+	color:#82929a;
+}
+
+/* End */
+
+
+/* Start:/bitrix/components/bitrix/voting.form/templates/main_page/style.css?1486475277397*/
+.voting-form-box
+{
+	font-size:100%;
+}
+
+.voting-form-box .active
+{
+	color:green;
+}
+
+.voting-form-box .disable
+{
+	color:red;
+}
+
+.voting-form-box label
+{
+	line-height:20px;
+}
+
+.voting-form-box form
+{
+	margin:0;
+}
+
+.starrequired 
+{
+    color:red;
+}
+.vote-reply-field-captcha-label {
+    margin-bottom:6px;}
+.vote-vote-footer {
+    margin-top:6px;}
+.vote-reply-field-captcha-image {
+    margin:6px 0;}
+
+/* End */
+
+
+/* Start:/bitrix/templates/books/styles.css?14864753691228*/
+
+h1
+{
+	margin:0; padding:0;
+	font-size:120%;
+	margin-bottom:15px;
+	padding-bottom:5px;
+	padding-top:14px;
+	border-bottom:1px solid #CCCCCC
+}
+
+h2, h3
+{
+	font-size:120%;
+}
+
+h2
+{
+	padding-top:15px;
+	padding-bottom:5px;
+	border-bottom:1px solid #CCCCCC;
+}
+
+h4, h5, h6
+{
+	font-size:110%;
+}
+
+/*Information block*/
+.information-block
+{
+	width:180px;
+	margin-bottom:16px;
+}
+
+.information-block-head
+{
+	color:#BC262C;
+	font-weight:bold;
+	font-size:85%;
+	border-bottom:1px solid #CCCCCC;
+	margin-bottom:4px;
+	padding-bottom:5px;
+}
+
+.information-block-body
+{
+	font-size:85%;
+	color:#737373;
+	margin-right:20px;
+}
+
+/*Content block*/
+.content-block
+{
+	border-top-color:#E4E4E4;
+	background:#F5F5F5;
+	margin-bottom:5px;
+	width:100%;
+}
+
+.content-block-head
+{
+	background-image:url(/bitrix/templates/books/images/content_block_bg.gif);
+	font-weight:bold;
+	font-size:95%;
+	margin:2px;
+	padding: 5px 9px;
+}
+
+.content-block-body
+{
+	padding:4px 5px;
+	width:100%;
+}
+
+code
+{
+	font-size:100%;
+	font-weight:normal;
+	display:block;
+	padding:1.5em 1em 1em 1em;
+	border-style:solid;
+	border-width:1px;
+	border-width:1px 0;
+	margin:1em 0;
+	background-color:#F5F5F5;
+	font-family:sans-serif;
+}
+/* End */
+
+
+/* Start:/bitrix/templates/books/template_styles.css?14864753713801*/
+html, body, form
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	height:100%;
+}
+
+body
+{
+	height:auto !important;
+	height:100%;
+	min-height:100%;
+	min-width:760px;
+}
+
+/*Font*/
+body
+{
+	font-size: 80%;
+	font-family: Tahoma, Verdana, Helvetica, sans-serif;
+	color: #333;
+	background-color: #fff;
+}
+
+/*Font in table*/
+table
+{
+	font-size:100%;
+}
+
+/*Links*/
+a:link {color: #486DAA;}
+a:visited{color:#8C9AA8;}
+a:active {color: #486DAA;}
+a:hover{color:#DD0000;}
+
+
+small
+{
+	font-size:85%;
+}
+
+hr
+{
+	width:100%;
+	height: 1px;
+	border: medium none;
+	color: #d1d0d0;
+	background-color: #d1d0d0;
+	margin:8px 0
+}
+
+#header
+{
+	position:relative; /*containing block*/
+	height:106px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	background: #2F4773 url(/bitrix/templates/books/images/header_bg.gif) repeat-x;
+	border-bottom:1px solid #D6D6D6;
+}
+
+#header_logo
+{
+	position:absolute;
+}
+
+#company_logo
+{
+	display:block;
+	position:absolute;
+	width:100px; 
+	height:106px; 
+	left:165px;
+	top: 0;
+	background:url(/bitrix/templates/books/images/logo.gif) right center no-repeat;
+}
+
+#header_text
+{
+	position:absolute;
+	left:265px;
+	top: 0;
+	width:330px;
+	padding-left:5px;
+	padding-top:35px;
+	color:#fff;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+#header_text .bx-main-title
+{
+	margin:0;
+	padding:0;
+	font-size:160%;
+	border:none;
+	text-decoration:none;
+}
+
+#header_text span.bx-main-subtitle
+{
+	font-size:80%;
+}
+
+/* Header menu: home, search, feedback*/
+#header_menu
+{
+
+	background:#4B6185;
+	position:absolute;
+	right:55px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+#header_sites
+{
+	position:absolute;
+	right:55px;
+	top: 60px;
+	color:#fff;
+	text-align:right;
+}
+
+#header_sites a, #header_sites span
+{
+	color:#fff;
+	text-decoration:none;
+}
+
+#header_sites span
+{
+	color: #9dabc0;
+}
+
+#header_menu a
+{
+	display:block;
+	float:left;
+	cursor:pointer; cursor: hand;
+	padding:8px 11px;
+}
+
+#zebra
+{
+	height:20px;
+	background:transparent url(/bitrix/templates/books/images/zebra_bg.gif) left top repeat-x;
+}
+
+#navigation
+{
+
+}
+
+/*Navigation*/
+#navigation a
+{
+	font-size:95%;
+	text-decoration:none;
+	color:#535353;
+}
+
+/*Content table*/
+#content
+{
+	width:100%;
+	height:70%;
+	border-collapse:collapse;
+}
+
+/*Left column*/
+#content .left-column
+{
+	width:180px;
+	vertical-align:top;
+	height:100%;
+}
+
+/*Main column*/
+#content .main-column
+{
+	vertical-align:top;
+	padding:0 23px 10px 23px;
+}
+
+/*Right column*/
+#content .right-column
+{
+	width:1px;
+	vertical-align:top;
+}
+
+/*Bottom banner*/
+#bottom_banner
+{
+	padding:5px;
+	text-align:center;
+}
+
+/*Footer*/
+#footer
+{
+	background: #4D6990;
+	text-align:right;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	height:40px;
+	padding:8px;
+	
+}
+
+/*Link in footer*/
+#footer a
+{
+	color: #CFD6E1;
+	font-size: 100%;
+}
+
+/*Data table*/
+table.data-table
+{
+	border:1px solid #99BAD7;
+	border-collapse:collapse;
+}
+
+/*Any cell*/
+table.data-table td
+{
+	border:1px solid #99BAD7;
+	background-color:#FFFFFF;
+	color:#333;
+	padding:3px 5px;
+}
+
+/*Head cell*/
+table.data-table thead td, table.data-table th
+{
+	background-color:#F1F5FA;
+	text-align:left;
+	font-weight:normal;
+	background-image:none;
+	border:1px solid #99BAD7;
+	padding:4px;
+	color:#333;
+}
+
+/*Body cell*/
+table.data-table tbody td
+{
+	background-color:#FFF;
+	background-image:none;
+	color:#333;
+}
+
+/*Foot cell*/
+table.data-table tfoot td
+{
+	background-color:#F1F5FA;
+	padding:4px;
+	color:#333;
+}
+
+/*Error & OK messages*/
+.errortext
+{
+	color:red;
+}
+
+.notetext
+{
+	color:green;
+}
+
+/* Used to draw a "star" near reqired field */
+.starrequired
+{
+	color:red;
+}
+
+/* social network*/
+div#sonet_events_ms_message {width:150px;}
+
+/* End */
+/* /bitrix/templates/books/components/bitrix/menu/horizontal_multilevel/style.css?14864753714598 */
+/* /bitrix/components/bitrix/menu/templates/.default/style.min.css?1486474706490 */
+/* /bitrix/components/bitrix/socialnetwork.events_dyn/templates/.default/style.css?14864750338373 */
+/* /bitrix/components/bitrix/system.auth.form/templates/.default/style.min.css?1486474711424 */
+/* /bitrix/components/bitrix/breadcrumb/templates/.default/style.min.css?1486474704448 */
+/* /bitrix/components/bitrix/socialnetwork.group_top/templates/.default/style.css?1486475036797 */
+/* /bitrix/components/bitrix/voting.form/templates/main_page/style.css?1486475277397 */
+/* /bitrix/templates/books/styles.css?14864753691228 */
+/* /bitrix/templates/books/template_styles.css?14864753713801 */
