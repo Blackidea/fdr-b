@@ -1,0 +1,176 @@
+/*Основные цвета*/
+$black: #2a2c28;
+$darkgreen: #23692b;
+$green: #2ca346;
+$red: #ce271a;
+
+@mixin border-radius($topleft, $topright: $topleft, $bottomright: $topleft, $bottomleft: $topleft) {
+    -moz-border-radius-topleft:     $topleft;
+    -moz-border-radius-topright:    $topright;
+    -moz-border-radius-bottomright: $bottomright;
+    -moz-border-radius-bottomleft:  $bottomleft;
+    border-radius:                  $topleft $topright $bottomright $bottomleft;
+}
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+@mixin box-shadow($top, $left, $blur, $else, $color, $inset: false) {
+  @if $inset {
+    box-shadow:inset $top $left $blur $else $color;
+  } @else {
+    box-shadow: $top $left $blur $else $color;
+  }
+}
+@mixin gradient($from, $to) {
+  background-color: $from;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+  background-image: -webkit-linear-gradient($from, $to);
+  background-image: -o-linear-gradient($from, $to);
+}
+@mixin box-sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {/* */
+border: none;
+}
+*:focus {outline: none;}
+
+/* Цвет выделения текста*/
+::-moz-selection {background: $green;color:white;}
+::selection {background: $green;color:white;}
+::-moz-selection {background: $green;color:white;}
+::-webkit-selection {background: $green;color:white;}
+
+/* Цвет плейсхолдера //*/
+::-webkit-input-placeholder {color:#fff}
+::-moz-placeholder {color:#fff}
+:-ms-input-placeholder {color:#fff}
+:-moz-placeholder {color:#fff}
+
+/* Фиксирование для body (при кастомных модальных окнах)*/
+.noscroll {position: fixed;}
+
+/* Настройки для автозаполнения Chrome*/
+input:-webkit-autofill {
+    -webkit-text-fill-color: black !important; /* Поменять цвет на аналогичный цвету input'а*/
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: background-color 50000000000s ease-in-out 0s !important;
+    transition: background-color 50000000000s ease-in-out 0s !important;
+}
+
+
+
+
+
+
+
+
+/* Сетка //*/
+$col-m:10.34%; /* Расстояние между колонками*/
+$col:(100-($col-m*11))/12; /* Ширина колонки*/
+
+$one-col:$col;
+$two-col:$col*2+$col-m*1;
+$three-col:$col*3+$col-m*2;
+$four-col:$col*4+$col-m*3;
+$five-col:$col*5+$col-m*4;
+$six-col:$col*6+$col-m*5;
+$seven-col:$col*7+$col-m*6;
+$eight-col:$col*8+$col-m*7;
+$nine-col:$col*9+$col-m*8;
+$ten-col:$col*10+$col-m*9;
+$eleven-col:$col*11+$col-m*10;
+$twelve-col:$col*12+$col-m*11;
+
+/* Равное расстояние между колонками*/
+.cols {text-align:justify; text-justify:distribute;
+  &:after {content:""; display:inline-block; height:0.0000000000001px; width:100%;}
+    >* {display:inline-block; @include box-sizing; vertical-align: top;
+  }
+}
+/* Сетка //*/
+
+
+
+
+
+
+
+
+
+/* Основы //*/
+html {width:100%; height:100%;}
+body {width:100%; float:left; height:100%; font-size:0; font-family: "Exo 2", Arial, sans-serif; position: relative; -webkit-transition: -webkit-transform 0.5s ease-in-out; transition: -webkit-transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out; transition:transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;}
+html {overflow-x:hidden;}
+/*html, body {overflow-x: hidden;}*/
+
+header, section, footer {width:100%; float:left;}
+section {text-align: center;}
+.container {width:290px; margin:0 auto;}
+/* Основы //*/
+
+
+
+
+
+
+
+
+
+/* Типографика //*/
+h1,h2,h3,h4,h5,h6,p,span,ul,li {margin:0; padding:0}
+ul {list-style:none}
+span {font-style: inherit; font-family: inherit; font-weight: inherit;}
+
+h1,h2,h3,h4,h5 {} /* Общие стили для заголовков (если есть)*/
+
+/* Стили заголовков (удалить лишнее)*/
+h1 {font-size:35px; line-height:1.2em; color: #fff; font-weight: 100;}
+h2 {font-size:22px; line-height:1.5em; text-transform: uppercase; font-weight: 500; letter-spacing: 0.15em; font-family: 'Gotham Pro', Arial, sans-serif;}
+h3 {font-size:24px; line-height:1.2em;}
+h4 {font-size:20px; line-height:1.2em;}
+h5 {font-size:18px; line-height:1.2em;}
+
+/* Стили абзацев (удалить лишнее)*/
+p {font-size:14px; line-height:1.7em;}
+p.small {font-size:12px;}
+p.big {font-size:16px;}
+p.huge {font-size:18px;}
+/* Типографика //*/
+
+
+
+
+
+
+
+
+
+/* Формы, кнопки, поля ввода //*/
+a,input,button,select,textarea {@include transition(all, 0.25s, ease-in-out); @include box-sizing;}
+a {text-decoration: inherit; font-weight: inherit; line-height:inherit; color:inherit;}
+
+select, input, textarea {padding: 10px; text-align: left; margin: 0; padding:0; border: 0; font-size: 14px; display:inline-block;}
+
+select {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+
+input[type="checkbox"]:not(old), input[type="radio"]:not(old) {width: 0; margin: 0; padding: 0; opacity: 0; height: 0; display: inline-block; vertical-align: middle; position:absolute; top:0; left:0; margin:auto;}
+
+.button {text-align:center; border:0; padding:10px; display:inline-block; color:white; font-size:15px; background-color: transparent;
+  &::hover {background-color:blue}
+}
+/* Формы, кнопки, поля ввода //*/
