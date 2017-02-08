@@ -1,0 +1,32 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Арендодателям", 
+		"/rents", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Инвесторам", 
+		"/investors/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Благодарственные письма", 
+		"/thanksgiving/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Партнерам", 
+		"/ratners_info/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/templates/fdr_blackidea/components/bitrix/menu/footer/script.js" => "1486554001407",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

@@ -16,24 +16,44 @@
 		<div class="footer__middle-part">
 			<!-- Desktop -->
 			<div class="footer__listsblock">
-			    <ul class="footer__list">
-			        <li><p><a href="#">Акции</a></p></li>
-			        <li><p><a href="#">Новости</a></p></li>
-			        <li><p><a href="#">Для прессы</a></p></li>
-			        <li><p><a href="#">Рекламные материалы</a></p></li>
-			    </ul>
-			    <ul class="footer__list">
-			        <li><p><a href="#">Арендодателям</a></p></li>
-			        <li><p><a href="#">Инвесторам</a></p></li>
-			        <li><p><a href="#">Благодарственные письма</a></p></li>
-			        <li><p><a href="#">Партнерам</a></p></li>
-			    </ul>
-			    <ul class="footer__list">
-			        <li><p><a href="#">FAQ</a></p></li>
-			        <li><p><a href="#">Договор публичной оферты</a></p></li>
-			        <li><p><a href="#">Купля-продажа</a></p></li>
-			        <li><p><a href="#">Контакты</a></p></li>
-			    </ul>
+                <?$APPLICATION->IncludeComponent("bitrix:menu", "footer", Array(
+                	"ROOT_MENU_TYPE" => "footer_1",	// Тип меню для первого уровня
+                		"MAX_LEVEL" => "3",	// Уровень вложенности меню
+                		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
+                		"USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                		"MENU_CACHE_TYPE" => "A",	// Тип кеширования
+                		"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                		"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+                		"MENU_CACHE_GET_VARS" => "",	// Значимые переменные запроса
+                	),
+                	false
+                );?> 
+			    
+                <?$APPLICATION->IncludeComponent("bitrix:menu", "footer", Array(
+                	"ROOT_MENU_TYPE" => "footer_2",	// Тип меню для первого уровня
+                		"MAX_LEVEL" => "3",	// Уровень вложенности меню
+                		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
+                		"USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                		"MENU_CACHE_TYPE" => "A",	// Тип кеширования
+                		"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                		"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+                		"MENU_CACHE_GET_VARS" => "",	// Значимые переменные запроса
+                	),
+                	false
+                );?> 
+			    
+			    <?$APPLICATION->IncludeComponent("bitrix:menu", "footer", Array(
+                	"ROOT_MENU_TYPE" => "footer_3",	// Тип меню для первого уровня
+                		"MAX_LEVEL" => "3",	// Уровень вложенности меню
+                		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
+                		"USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                		"MENU_CACHE_TYPE" => "A",	// Тип кеширования
+                		"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                		"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+                		"MENU_CACHE_GET_VARS" => "",	// Значимые переменные запроса
+                	),
+                	false
+                );?> 
 			</div>
 			
 			<form action="send.php" method="post" class="footer__form">

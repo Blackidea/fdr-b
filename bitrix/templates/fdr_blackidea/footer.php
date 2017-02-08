@@ -14,7 +14,7 @@ IncludeTemplateLangFile(__FILE__);?>
 <!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script src="<?=$APPLICATION->GetTemplatePath("js/jquery-2.1.3.min.js");?>"></script>
-<script src="<?=$APPLICATION->GetTemplatePath("js/main-calculator.js");?>"></script>
+
 <!-- Маска поля ввода !-->
 <script src="<?=$APPLICATION->GetTemplatePath("js/inputmask.js");?>"></script>
 <script src="<?=$APPLICATION->GetTemplatePath("js/jquery.inputmask.js");?>"></script>
@@ -43,6 +43,6 @@ IncludeTemplateLangFile(__FILE__);?>
 
 <script src="<?=$APPLICATION->GetTemplatePath("js/scripts.min.js");?>"></script>
 
-
+<script src="<?=$APPLICATION->GetTemplatePath("js/main-calculator.js");?>"></script>
 </body>
 </html>

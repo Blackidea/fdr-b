@@ -19,16 +19,16 @@ $arUrlRewrite = array(
 		"PATH" => "/e-store/books/reviews/index.php",
 	),
 	array(
-		"CONDITION" => "#^/e-store/xml_catalog/#",
-		"RULE" => "",
-		"ID" => "bitrix:catalog",
-		"PATH" => "/e-store/xml_catalog/index.php",
-	),
-	array(
 		"CONDITION" => "#^/communication/forum/#",
 		"RULE" => "",
 		"ID" => "bitrix:forum",
 		"PATH" => "/communication/forum/index.php",
+	),
+	array(
+		"CONDITION" => "#^/e-store/xml_catalog/#",
+		"RULE" => "",
+		"ID" => "bitrix:catalog",
+		"PATH" => "/e-store/xml_catalog/index.php",
 	),
 	array(
 		"CONDITION" => "#^/communication/blog/#",
@@ -67,10 +67,10 @@ $arUrlRewrite = array(
 		"PATH" => "/content/photo/index.php",
 	),
 	array(
-		"CONDITION" => "#^/content/idea/#",
+		"CONDITION" => "#^/club/gallery/#",
 		"RULE" => "",
-		"ID" => "bitrix:idea",
-		"PATH" => "/content/idea/index.php",
+		"ID" => "bitrix:photogallery_user",
+		"PATH" => "/club/gallery/index.php",
 	),
 	array(
 		"CONDITION" => "#^/content/news/#",
@@ -79,10 +79,10 @@ $arUrlRewrite = array(
 		"PATH" => "/content/news/index.php",
 	),
 	array(
-		"CONDITION" => "#^/club/gallery/#",
+		"CONDITION" => "#^/content/idea/#",
 		"RULE" => "",
-		"ID" => "bitrix:photogallery_user",
-		"PATH" => "/club/gallery/index.php",
+		"ID" => "bitrix:idea",
+		"PATH" => "/content/idea/index.php",
 	),
 	array(
 		"CONDITION" => "#^/content/faq/#",
@@ -95,6 +95,12 @@ $arUrlRewrite = array(
 		"RULE" => "",
 		"ID" => "bitrix:forum",
 		"PATH" => "/club/forum/index.php",
+	),
+	array(
+		"CONDITION" => "#^/discounts/#",
+		"RULE" => "",
+		"ID" => "bitrix:news",
+		"PATH" => "/discounts/index.php",
 	),
 	array(
 		"CONDITION" => "#^/club/#",
