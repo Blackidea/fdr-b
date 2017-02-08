@@ -103,10 +103,22 @@ $arUrlRewrite = array(
 		"PATH" => "/discounts/index.php",
 	),
 	array(
+		"CONDITION" => "#^/news/#",
+		"RULE" => "",
+		"ID" => "bitrix:news",
+		"PATH" => "/news/index.php",
+	),
+	array(
 		"CONDITION" => "#^/club/#",
 		"RULE" => "",
 		"ID" => "bitrix:socialnetwork",
 		"PATH" => "/club/index.php",
+	),
+	array(
+		"CONDITION" => "#^/news/#",
+		"RULE" => "",
+		"ID" => "bitrix:news",
+		"PATH" => "/foderent-novosti/index.php",
 	),
 );
 

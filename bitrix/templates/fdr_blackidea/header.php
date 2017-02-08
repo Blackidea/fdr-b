@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="<?=$APPLICATION->GetTemplatePath('js/fancybox/jquery.fancybox.css')?>"/>
     <link rel="stylesheet" href="<?=$APPLICATION->GetTemplatePath('js/jqueryui/jquery-ui.css')?>"/>
     <link rel="stylesheet" href="<?=$APPLICATION->GetTemplatePath('css/default.css')?>"/>
+    <script src="<?=$APPLICATION->GetTemplatePath("js/jquery-2.1.3.min.js");?>"></script>
 </head>
 
 <body class="mainpage">
